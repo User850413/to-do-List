@@ -41,9 +41,17 @@ body {
   align-items: center;
 }
 .container > i {
-  font-size: 40px;
-  margin: 25px;
-  color: #243c7c;
+  font-size: 24px;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #243c7c;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .container_d {
   border-radius: 20px;
@@ -70,6 +78,7 @@ body {
   color: white;
   width: 100%;
   padding: 10px 0;
+  cursor: default;
 }
 .dList {
   width: 100%;
@@ -88,6 +97,9 @@ body {
   background-color: rgba(255, 255, 255, 0);
   color: rgba(36, 60, 124, 0.8);
 }
+.dList input::placeholder {
+  color: #bbb;
+}
 .dList > li {
   align-items: center;
   border-radius: 10px;
@@ -101,18 +113,29 @@ body {
   padding: 5px;
   cursor: pointer;
 }
-.plus_list,
-.check_list {
-  display: inline;
-  margin: 0 auto;
-  font-size: 30px;
+.list_done input {
+  cursor: default;
+}
+.icons {
+  display: flex;
+  gap: 60px;
+  margin: 20px auto 0;
+}
+.icons > i {
+  font-size: 40px;
+  color: #243c7c;
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
 }
-.plus_list:hover {
+.icons > i:hover {
   background-color: rgba(36, 60, 124, 0.1);
 }
 .check_list {
+  display: inline;
+  margin: 0 auto;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 5px;
   opacity: 0.2;
 }

@@ -13,19 +13,23 @@
     ></script>
     <!-- css -->
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="container_d">
-        <div class="title">해야할 일</div>
+        <div class="title">해야 할 일</div>
         <div class="doing">
           <ul class="dList list_doing">
             <li>
-              <input type="text" />
+              <input type="text" placeholder="할 일을 작성하세요." />
               <i class="fa-regular fa-square"></i>
             </li>
           </ul>
-          <i class="fa-regular fa-square-plus plus_list"></i>
+          <div class="icons">
+            <i class="fa-regular fa-square-plus plus_list"></i>
+            <i class="fa-regular fa-square-minus minus_list"></i>
+          </div>
         </div>
       </div>
 
@@ -36,8 +40,8 @@
         <div class="done">
           <ul class="dList list_done">
             <li>
-              <i class="fa-regular fa-circle-left"></i>
               <input type="text" readonly />
+              <i class="fa-regular fa-square"></i>
             </li>
           </ul>
           <i class="fa-solid fa-check check_list"></i>
