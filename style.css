@@ -1,0 +1,118 @@
+/* 폰트 */
+@font-face {
+  font-family: "Ownglyph_Dailyokja-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+input[type="text"] {
+  font-family: "Ownglyph_Dailyokja-Rg";
+}
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Ownglyph_Dailyokja-Rg";
+}
+li {
+  list-style-type: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+/* css */
+body {
+  background-color: #d7e2ff;
+}
+.container {
+  max-width: 1100px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+}
+.container > i {
+  font-size: 40px;
+  margin: 25px;
+  color: #243c7c;
+}
+.container_d {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 500px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.doing,
+.done {
+  flex: 1 0 auto;
+  background-color: white;
+  padding: 10px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.title {
+  font-size: 30px;
+  text-align: center;
+  background-color: #243c7c;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+}
+.dList {
+  width: 100%;
+  flex: 1 0 auto;
+  margin: 0 auto;
+}
+.dList > li {
+  display: flex;
+}
+.dList input {
+  flex: 1 0 auto;
+  padding: 5px;
+  border-bottom: 2px dashed rgba(36, 60, 124, 0.3);
+  font-size: 25px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(36, 60, 124, 0.8);
+}
+.dList > li {
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+.dList li:has(i:hover) {
+  background-color: rgba(36, 60, 124, 0.1);
+}
+.dList > li > i {
+  font-size: 28px;
+  padding: 5px;
+  cursor: pointer;
+}
+.plus_list,
+.check_list {
+  display: inline;
+  margin: 0 auto;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+.plus_list:hover {
+  background-color: rgba(36, 60, 124, 0.1);
+}
+.check_list {
+  opacity: 0.2;
+}
